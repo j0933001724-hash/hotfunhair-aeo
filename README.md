@@ -41,9 +41,15 @@ python3 _build/build.py
 7. **不寫租借**：擋「租借／台灣癌症基金會／canceraway」。化療建議改為：療程開始前先備好現成假髮、療程後換新的，量身訂做依個人需求。
 8. **不販售化療帽、頭巾**：頁面提到帽子或頭巾時須註明哈髮不販售。
 9. 不放「需店家確認」標記（材質已於 2026-10-08 由店家確認）。
+10. **Cosplay 只賣素材**：哈髮的 Cosplay／同人誌假髮以販售素材為主，店內不提供修剪或造型服務。擋任何暗示店內修剪／造型 Cosplay 假髮或「請 LINE 詢問修剪」的句子（除非同句寫明「不提供…修剪／造型」）。選色、預留長度等一般挑選建議保留，但修剪一律寫成買回去自行處理。
+11. **正式店名**：全站一律使用「哈髮科技假髮」（英文 Hot Fun Hair）。
 
 ## 店家確認事實（2026-10-08）
 現場約百款可試戴；2004 年起在現址經營；化療前免費剃髮；少量兒童尺寸假髮；不賣化療帽／頭巾；阻燃絲＝阻燃纖維，不會像尼龍一樣燒起來；奈米冰絲抗菌網＝抗菌網的流行叫法；髮片有真髮、纖維、日本科技絲，含依比例黑白混色遮白款；膠黏髮片分前膠後夾與全膠（全膠需剃髮，可游泳、洗澡、睡覺、戴安全帽）；髮量可分次加第二、第三片。
+
+## 店家確認事實（2026-10-09）
+- Cosplay／同人誌假髮只賣素材，店內不修剪、不造型；可現場挑選與試戴。
+- 正式店名在所有地方皆為「哈髮科技假髮」；Google 地圖商家名稱（目前顯示「哈髮時尚假髮」）由店家自行申請更名中。
 
 ## NAP（全站頁尾一致）
 哈髮科技假髮｜台北市大同區鄭州路23號｜02-25526562｜週一～六 11:30–19:30；週日預約制｜設計師賈斯汀
@@ -57,8 +63,7 @@ python3 _build/build.py
 - 座標 25.0495315, 121.5144498（官網 Google 地圖連結）。
 
 ## 上線前請店家確認
-- [ ] Google 地圖商家名稱目前顯示「哈髮時尚假髮」，與網站「哈髮科技假髮」不一致 → 建議統一 NAP 名稱。
-- [ ] Cosplay 角色頭修剪／造型是否店內承接（目前寫「請先 LINE 詢問」）。
+- [ ] Google 地圖商家名稱：店家正在更名為「哈髮科技假髮」（2026-10-09 確認），完成後確認 NAP 一致。
 - [ ] 正式網址：目前上線在 GitHub Pages https://j0933001724-hash.github.io/hotfunhair-aeo/（canonical／sitemap／schema 皆指向此）。換自訂網域時同步改 `_build/hfh.py` 的 BASE 後重跑 build。
-- [ ] 換成正式 Logo（PNG/JPG，≥112px）供 Organization.logo 使用；目前暫用 favicon.svg。
+- [ ] 正式 Logo（2026-10-09 已由店家原檔製作）：`_build/make_logo.py` 從 logo-src-white.jpg／logo-src-pink.jpg 產生 logo.png（頁首，600px 透明底）、logo-512.png（schema Organization.logo）、og-image.png（1200×630，og:image／twitter:image）、favicon-32.png、favicon-192.png、apple-touch-icon.png（只取綠色 H）。logo-src-*.jpg 不上傳。**這 6 個 PNG 需先放進 repo 根目錄**（GitHub 網頁「Add file → Upload files」），之後用 `python3 _build/build.py`（預設 HFH_LOGO=1）重建並推送 HTML。PNG 尚未上傳前，請用 `HFH_LOGO=0 python3 _build/build.py`，頁面仍用文字店名與 favicon.svg。
 - [ ] 郵遞區號 103（大同區）已填入 schema，如有 5 碼／6 碼需求再補。
