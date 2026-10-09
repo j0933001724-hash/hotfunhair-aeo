@@ -18,6 +18,10 @@ a{color:var(--brand-2)} a:hover{color:var(--accent)}
 .header-row{display:flex;align-items:center;gap:12px;min-height:60px}
 .brand{text-decoration:none;color:var(--brand);display:flex;flex-direction:column;line-height:1.2;margin-right:auto}
 .brand-zh{font-weight:700;font-size:1.15rem}.brand-en{font-size:.75rem;color:var(--muted);letter-spacing:.06em}
+.brand{flex-direction:row;align-items:center;gap:10px}
+.brand-logo{display:block;height:56px;width:auto;max-width:none}
+.brand-text{display:flex;flex-direction:column;line-height:1.2}
+@media(max-width:599px){.brand-logo{height:44px}.brand-text{display:none}.header-row{min-height:56px}}
 .header-tel{text-decoration:none;font-weight:700;color:var(--brand)}
 .nav-toggle{border:1px solid var(--line);background:#fff;border-radius:8px;padding:6px 12px;font:inherit;cursor:pointer;display:none}
 .site-nav{display:flex;flex-wrap:wrap;gap:6px 18px;padding-bottom:10px}
