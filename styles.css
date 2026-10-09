@@ -1,0 +1,120 @@
+/* 哈髮科技假髮 AEO site — mobile-first, no framework */
+:root{
+  --ink:#1f2a2a; --muted:#5b6b6b; --bg:#fbfaf7; --card:#fff; --line:#e4e0d8;
+  --brand:#2f4f4f; --brand-2:#3f6f6a; --accent:#c8794a;
+  --med:#2e6f8e; --med-bg:#eef6fa; --cos:#7a4fa3; --cos-bg:#f5effb;
+  --radius:12px; --wrap:1040px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;
+  color:var(--ink);background:var(--bg);line-height:1.8;font-size:17px;padding-bottom:64px}
+a{color:var(--brand-2)} a:hover{color:var(--accent)}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 18px}
+.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:12px;background:#fff;padding:8px;z-index:99}
+
+/* header + nav */
+.site-header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+.header-row{display:flex;align-items:center;gap:12px;min-height:60px}
+.brand{text-decoration:none;color:var(--brand);display:flex;flex-direction:column;line-height:1.2;margin-right:auto}
+.brand-zh{font-weight:700;font-size:1.15rem}.brand-en{font-size:.75rem;color:var(--muted);letter-spacing:.06em}
+.header-tel{text-decoration:none;font-weight:700;color:var(--brand)}
+.nav-toggle{border:1px solid var(--line);background:#fff;border-radius:8px;padding:6px 12px;font:inherit;cursor:pointer;display:none}
+.site-nav{display:flex;flex-wrap:wrap;gap:6px 18px;padding-bottom:10px}
+.nav-group{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.nav-label{font-size:.72rem;font-weight:700;padding:1px 8px;border-radius:99px;background:#eef1ef;color:var(--muted)}
+.nav-group ul{list-style:none;margin:0;padding:0;display:flex;gap:4px 12px;flex-wrap:wrap}
+.nav-group a{text-decoration:none;font-size:.92rem;color:var(--ink)}
+.nav-group a[aria-current=page]{color:var(--accent);font-weight:700}
+.nav-medical .nav-label{background:var(--med-bg);color:var(--med)}
+.nav-cosplay{margin-left:auto;padding-left:14px;border-left:2px dashed var(--line)}
+.nav-cosplay .nav-label{background:var(--cos-bg);color:var(--cos)}
+.js .nav-toggle{display:inline-block}
+.js .site-nav{display:none;flex-direction:column}
+.js .site-nav.open{display:flex}
+@media(min-width:860px){
+  .js .nav-toggle{display:none}
+  .js .site-nav,.site-nav{display:flex;flex-direction:row}
+}
+
+/* content */
+main{padding:18px 18px 40px}
+.breadcrumb ol{list-style:none;display:flex;gap:6px;padding:0;margin:6px 0 10px;font-size:.85rem;color:var(--muted)}
+.breadcrumb li+li::before{content:"›";margin-right:6px}
+.content{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px 20px;max-width:820px;margin:0 auto}
+.page-index .content{max-width:none}
+h1{font-size:1.6rem;line-height:1.4;margin:.2em 0 .5em;color:var(--brand)}
+h2{font-size:1.25rem;line-height:1.5;margin:1.8em 0 .5em;padding-left:10px;border-left:4px solid var(--accent)}
+h3{font-size:1.05rem;margin:1.3em 0 .3em}
+.lead{font-size:1.05rem;background:#f6f3ec;border-radius:10px;padding:12px 14px;margin:0 0 8px}
+.byline{font-size:.85rem;color:var(--muted);margin:6px 0 0}
+.answer{font-weight:600}
+.med-notice{background:var(--med-bg);border:1px solid #cfe3ee;border-left:5px solid var(--med);border-radius:10px;padding:10px 14px;margin:16px 0;font-size:.92rem}
+.soft-note{font-size:.9rem;color:var(--muted);background:#f7f7f4;border-radius:8px;padding:8px 12px}
+.verify{display:inline-block;font-size:.72rem;font-weight:700;color:#8a4b00;background:#fff3d6;border:1px dashed #e0a43c;border-radius:6px;padding:0 6px;margin-left:4px;vertical-align:middle}
+.is-cosplay h2{border-left-color:var(--cos)} .is-medical h2{border-left-color:var(--med)}
+.checklist li,.steps li{margin:.4em 0}
+table.compare{width:100%;border-collapse:collapse;font-size:.92rem;margin:12px 0;display:block;overflow-x:auto}
+.compare th,.compare td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top;min-width:110px}
+.compare thead th{background:#f2efe8}
+.faq{margin-top:2em;border-top:1px solid var(--line)}
+.faq-item h3{margin-top:1.2em}
+.nap-card{display:grid;grid-template-columns:6em 1fr;gap:6px 12px;background:#f6f3ec;border-radius:10px;padding:14px;margin:16px 0}
+.nap-card dt{font-weight:700;color:var(--muted)} .nap-card dd{margin:0}
+
+/* home cards */
+.cards{display:grid;grid-template-columns:1fr;gap:14px;margin:18px 0}
+@media(min-width:760px){.cards{grid-template-columns:1fr 1fr}}
+.card-group{border:1px solid var(--line);border-radius:var(--radius);padding:12px 14px;background:#fff}
+.card-group h2{margin:.2em 0 .4em;font-size:1.05rem;border:0;padding:0}
+.card-group ul{list-style:none;margin:0;padding:0}
+.card-group a{display:block;text-decoration:none;color:var(--ink);padding:8px 0;border-top:1px dashed var(--line)}
+.card-group a span{display:block;font-size:.85rem;color:var(--muted)}
+.card-medical{border-top:4px solid var(--med)} .card-cosplay{border-top:4px solid var(--cos)}
+.card-hair{border-top:4px solid var(--accent)} .card-service{border-top:4px solid var(--brand-2)}
+
+/* CTA */
+.cta{background:var(--brand);color:#fff;border-radius:var(--radius);padding:18px;margin:2em 0 1em}
+.cta a{color:#fff}.cta-title{border:0;padding:0;margin:0 0 .3em;color:#fff}
+.cta-actions{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0}
+.btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:99px;padding:10px 18px}
+.btn-primary{background:#06c755;color:#fff}.btn-secondary{background:#fff;color:var(--brand)!important}
+.btn-ghost{border:1px solid rgba(255,255,255,.6)}
+.cta-nap{font-size:.85rem;opacity:.9;margin:0}
+.related ul{padding-left:1.2em}
+
+/* footer + sticky */
+.site-footer{background:#22302f;color:#d9e1df;padding:24px 0;font-size:.9rem}
+.site-footer a{color:#fff}.nap{font-weight:700;color:#fff}
+.footer-meta{opacity:.8;font-size:.8rem}
+.sticky-cta{position:fixed;left:0;right:0;bottom:0;display:flex;z-index:30;box-shadow:0 -2px 10px rgba(0,0,0,.08)}
+.sticky-cta a{flex:1;text-align:center;padding:14px 8px;font-weight:700;text-decoration:none;background:#fff;color:var(--brand)}
+.sticky-cta a[data-cta=line]{background:#06c755;color:#fff}
+.sticky-cta{padding-bottom:env(safe-area-inset-bottom,0)}
+body{padding-bottom:calc(64px + env(safe-area-inset-bottom,0px))}
+
+/* tablets (iPad portrait 768–834 / landscape 1024–1194): touch devices keep the
+   bottom CTA bar; header scrolls away in landscape so the 2-row nav doesn't eat the short viewport */
+.content h2[id],.content h3[id],.qa,.faq-item{scroll-margin-top:84px}
+@media(min-width:860px) and (max-width:1199px){
+  .site-header{position:static}
+  .content h2[id],.content h3[id],.qa,.faq-item{scroll-margin-top:16px}
+  .nav-group a{padding:4px 0}
+  .sticky-cta{left:50%;right:auto;transform:translateX(-50%);width:min(640px,100%);border-radius:14px 14px 0 0;overflow:hidden}
+}
+@media(max-width:859px){
+  .nav-cosplay{margin-left:0;padding-left:0;border-left:0}
+  .nav-group a{display:inline-block;padding:6px 0}
+}
+@media(min-width:768px) and (max-width:859px){
+  .js .site-nav.open{display:grid;grid-template-columns:1fr 1fr;gap:10px 18px;padding:6px 18px 14px}
+}
+@media(min-width:1200px){
+  .sticky-cta{display:none}body{padding-bottom:0}
+  .content h2[id],.content h3[id],.qa,.faq-item{scroll-margin-top:140px}
+}
+
+/* auto TOC */
+.toc{background:#f7f7f4;border-radius:10px;padding:10px 14px;margin:16px 0;font-size:.92rem}
+.toc strong{display:block;margin-bottom:4px}.toc ol{margin:0;padding-left:1.3em}
+@media print{.site-header,.sticky-cta,.cta-actions{display:none}}
