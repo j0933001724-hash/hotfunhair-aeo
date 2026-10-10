@@ -1,7 +1,7 @@
 # 哈髮科技假髮（Hot Fun Hair）SEO／AEO 靜態網站
 
 依「SEO & AEO Desk」定稿企劃建置：繁體中文（台灣）、每頁先給直接答案（answer-first）、只為**看得到的問答**加 FAQPage schema。
-最後更新：2026-10-09・作者：設計師賈斯汀
+最後更新：2026-10-10・作者：設計師賈斯汀
 
 ## 預覽
 ```bash
@@ -27,7 +27,7 @@ python3 _build/build.py
 | visit.html | 台北北門假髮店怎麼去？預約與到店流程（NAP 卡 + LocalBusiness） |
 | about.html | 關於哈髮科技假髮（AboutPage；Person 賈斯汀 = 全站 Article author） |
 | styles.css / aeo.js | 樣式；JS 只做漸進增強（手機選單、自動目錄、CTA 點擊 dataLayer）。內容與 JSON-LD 皆為靜態 HTML |
-| robots.txt / sitemap.xml | 允許搜尋與 AI 爬蟲；sitemap lastmod 2026-10-09 |
+| robots.txt / sitemap.xml | 允許搜尋與 AI 爬蟲；sitemap lastmod 2026-10-10 |
 | favicon.svg | 暫用標誌 |
 | _build/ | 產生器（hfh.py 共用設定、pages_a/b.py 內容、build.py）。**部署時不用上傳**（robots 已 Disallow） |
 
@@ -69,3 +69,8 @@ python3 _build/build.py
 - [ ] 正式網址：目前上線在 GitHub Pages https://j0933001724-hash.github.io/hotfunhair-aeo/（canonical／sitemap／schema 皆指向此）。換自訂網域時同步改 `_build/hfh.py` 的 BASE 後重跑 build。
 - [ ] 正式 Logo（2026-10-09 已由店家原檔製作）：`_build/make_logo.py` 從 logo-src-white.jpg／logo-src-pink.jpg 產生 logo.png（頁首，600px 透明底）、logo-512.png（schema Organization.logo）、og-image.png（1200×630，og:image／twitter:image）、favicon-32.png、favicon-192.png、apple-touch-icon.png（只取綠色 H）。logo-src-*.jpg 不上傳。**這 6 個 PNG 需先放進 repo 根目錄**（GitHub 網頁「Add file → Upload files」），之後用 `python3 _build/build.py`（預設 HFH_LOGO=1）重建並推送 HTML。PNG 尚未上傳前，請用 `HFH_LOGO=0 python3 _build/build.py`，頁面仍用文字店名與 favicon.svg。
 - [ ] 郵遞區號 103（大同區）已填入 schema，如有 5 碼／6 碼需求再補。
+
+## 索引設定（2026-10-10）
+
+- **IndexNow**（Bing、Yandex、Seznam、Naver 等）：金鑰 `bf3128e7452f82a01db4d405eb3dab67`，金鑰檔 `bf3128e7452f82a01db4d405eb3dab67.txt` 放在站台根目錄，由 `_build/build.py` 自動產生（金鑰定義在 `_build/hfh.py` 的 `INDEXNOW_KEY`）。內容更新後，把有變動的網址 POST 到 `https://api.indexnow.org/indexnow`，`host` 為 `j0933001724-hash.github.io`，`keyLocation` 為 `https://j0933001724-hash.github.io/hotfunhair-aeo/bf3128e7452f82a01db4d405eb3dab67.txt`。
+- **Google Search Console**：建立「網址前置字元」資源 `https://j0933001724-hash.github.io/hotfunhair-aeo/`，選「HTML 標記」驗證。把 GSC 給的 content 值填進 `_build/hfh.py` 的 `GOOGLE_SITE_VERIFICATION`（或用 `HFH_GSC=值 python3 _build/build.py`；貼整段 `<meta>` 也可以），重建後只推 `index.html`，再到 GSC 按「驗證」並提交 `sitemap.xml`。不要猜這個值。
