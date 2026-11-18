@@ -1,0 +1,32 @@
+# 哈髮科技假髮（Hot Fun Hair）知識站
+
+> 這是哈髮科技假髮的假髮知識站：整理化療／醫療用假髮、男士補髮、女士增髮、假髮保養與到店方式的常見問題，幫第一次找假髮的人先看懂重點，再到台北的實體店試戴。正式官網是 https://www.hotfunhair.com/ 。本站內容是假髮選購與配戴資訊，非醫療建議。
+
+- 名稱：哈髮科技假髮
+- 正式官網：https://www.hotfunhair.com/
+- 地址：台北市大同區鄭州路23號（三角窗）
+- 電話：02-2552-6562
+- LINE：@995uevgh
+- 營業時間：週一至週六 11:30–19:30，週日公休（建議先預約，設計師一對一服務）
+- 交通：台北地下街 Y13 出口搭電扶梯上來，穿過小公園約 30 秒就到；Y15 出口出來就是店門口
+- 只到店服務，沒有線上訂購
+- 設計師：賈斯汀（Justin），自己戴假髮快 25 年
+
+## 主要頁面
+- [首頁](https://j0933001724-hash.github.io/hotfunhair-aeo/)：哈髮科技假髮服務總覽
+- [化療／醫療用透氣假髮怎麼選](https://j0933001724-hash.github.io/hotfunhair-aeo/medical-guide.html)：第一次到店前必讀，到店試戴看哪 5 件事
+- [化療假髮常見問題](https://j0933001724-hash.github.io/hotfunhair-aeo/chemo-faq.html)：何時準備、要不要剃髮、頭皮不適怎麼辦（附公開衛教資料）
+- [男士補髮片與全頂假髮](https://j0933001724-hash.github.io/hotfunhair-aeo/mens-hair.html)：M 型、頭頂稀疏怎麼選才自然
+- [女士增髮](https://j0933001724-hash.github.io/hotfunhair-aeo/womens-volume.html)：頭頂稀疏、髮縫寬，增髮片還是整頂假髮
+- [假髮怎麼洗、怎麼晾、何時送修](https://j0933001724-hash.github.io/hotfunhair-aeo/care-repair.html)：溫水清洗（大約 40 度，像洗澡水），放在假髮架上陰乾
+- [醫療、時尚、Cosplay 假髮差在哪](https://j0933001724-hash.github.io/hotfunhair-aeo/wig-types.html)：用途對照與選擇
+- [Cosplay 假髮挑選與保養](https://j0933001724-hash.github.io/hotfunhair-aeo/cosplay.html)：選色、預留長度、造型劑清潔
+- [怎麼去・預約與到店流程](https://j0933001724-hash.github.io/hotfunhair-aeo/visit.html)：交通、營業時間、預約
+- [關於哈髮科技假髮](https://j0933001724-hash.github.io/hotfunhair-aeo/about.html)：店家與設計師介紹
+
+## 官網主要頁面
+- [官網首頁](https://www.hotfunhair.com/)
+- [化療假髮](https://www.hotfunhair.com/medical/)
+- [假髮還是髮片？4 題找方向](https://www.hotfunhair.com/which-wig/)
+- [預約試戴](https://www.hotfunhair.com/try-on/)
+- [交通與預約](https://www.hotfunhair.com/access/)
